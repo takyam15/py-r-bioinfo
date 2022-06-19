@@ -1,0 +1,14 @@
+version: '3'
+services:
+  miniconda:
+    platform: linux/x86_64
+    build: .
+    image: takyam15/py-r-bioinfo:latest
+    container_name: jupyterlab
+    command: jupyter lab --ip=0.0.0.0 --allow-root --LabApp.token=''
+    ports:
+     - "8888:8888"
+    volumes:
+     - ./code:/work/code
+    tty: true
+    stdin_open: true
