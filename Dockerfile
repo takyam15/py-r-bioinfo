@@ -4,7 +4,7 @@ WORKDIR ${DIR_WORK}
 RUN apt-get update && apt-get install -y libgomp1
 ARG BASE_ENV_YML=base_env.yml
 COPY ${BASE_ENV_YML} ${DIR_WORK}/
-RUN conda update -y conda && \
+RUN conda update -y -c conda-forge conda && \
     conda env create --file ${BASE_ENV_YML}
 ARG DIR_CONDA=/opt/conda
 ARG VENV=bioinfo
