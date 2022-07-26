@@ -20,4 +20,5 @@ dependencies:
   - r-phater
   - r-leidenalg
   - r-umap
+  - r-rstan
   - r-irkernel
