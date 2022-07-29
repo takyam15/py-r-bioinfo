@@ -13,6 +13,7 @@ dependencies:
   - bioconductor-org.dr.eg.db
   - bioconductor-org.rn.eg.db
   - bioconductor-mixomics
+  - r-tidyverse
   - r-signac
   - r-wgcna
   - r-seurat
