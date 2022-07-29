@@ -37,3 +37,10 @@ torch
 torchvision
 torchaudio
 gpytorch
+flask
+fastapi
+gunicorn
+uvicorn
+streamlit
+sphinx
+pytest

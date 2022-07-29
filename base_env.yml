@@ -21,4 +21,6 @@ dependencies:
   - r-leidenalg
   - r-umap
   - r-rstan
+  - r-brms
+  - r-bayesplot
   - r-irkernel
