@@ -40,6 +40,9 @@ flask
 fastapi
 gunicorn
 uvicorn
+python-dotenv
+psycopg2-binary
+sqlalchemy
 streamlit
 sphinx
 pytest

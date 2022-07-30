@@ -1,10 +1,20 @@
 version: '3'
+
 services:
-  miniconda:
+  postgres:
+      container_name: postgres
+      image: postgres
+      env_file:
+        - ./code/Python/.env
+      ports:
+        - "5433:5432"
+      volumes:
+        - pg_data:/var/lib/postgresql/data
+  jupyter:
     platform: linux/x86_64
     build: .
     image: takyam15/py-r-bioinfo:latest
-    container_name: jupyterlab
+    container_name: jupyter
     command: jupyter lab --ip=0.0.0.0 --allow-root --LabApp.token=''
     ports:
      - "8888:8888"
@@ -12,3 +22,6 @@ services:
      - ./code:/work/code
     tty: true
     stdin_open: true
+
+volumes:
+  pg_data:
