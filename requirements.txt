@@ -16,6 +16,7 @@ seaborn
 fastcluster
 statannotations
 autoviz
+requests
 scikit-learn
 xgboost
 lightgbm
