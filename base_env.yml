@@ -3,7 +3,6 @@ channels:
   - conda-forge
   - bioconda
 dependencies:
-  - mkl-service
   - python=3.7
   - r-base
   - r-essentials

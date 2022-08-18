@@ -3,8 +3,10 @@ pydotplus
 graphviz
 jupyterlab
 ipywidgets
+mkl-service
 numpy
 pandas
+pandas-profiling
 openpyxl
 scipy
 statsmodels

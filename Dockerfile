@@ -1,7 +1,9 @@
 FROM condaforge/miniforge3:latest
 ARG DIR_WORK=/work
 WORKDIR ${DIR_WORK}
-RUN apt-get update && apt-get install -y libgomp1
+ENV TZ=Asia/Tokyo
+RUN ln -snf /usr/share/zoneinfo/$TZ /etc/localtime && echo $TZ > /etc/timezone
+RUN apt-get update && apt-get install -y libgomp1 graphviz
 ARG BASE_ENV_YML=base_env.yml
 COPY ${BASE_ENV_YML} ${DIR_WORK}/
 RUN conda update -y -c conda-forge conda && \
