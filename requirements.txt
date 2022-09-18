@@ -7,6 +7,7 @@ mkl-service
 numpy
 pandas
 pandas-profiling
+tables
 openpyxl
 scipy
 statsmodels
@@ -37,6 +38,7 @@ gpytorch
 biopython
 pyfaidx
 bcbio-gff
+anndata
 scanpy
 python-louvain
 leidenalg
